@@ -5,21 +5,21 @@
 class CubScout < Formula
   desc "Explore and map GitOps in your clusters"
   homepage "https://confighub.com"
-  version "0.9.1"
+  version "0.19.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/confighub/cub-scout/releases/download/v0.9.1/cub-scout_0.9.1_darwin_amd64.tar.gz"
-      sha256 "d038f7a089e3078ead581dd4c9470ad0e60adce3a974be2fef7c595a67bc2648"
+      url "https://github.com/confighub/cub-scout/releases/download/v0.19.2/cub-scout_0.19.2_darwin_amd64.tar.gz"
+      sha256 "2fbb2b106eb38829b02deee6d38ba51409ebaf632fa00237db1c789c2d4d91bc"
 
       def install
         bin.install "cub-scout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/confighub/cub-scout/releases/download/v0.9.1/cub-scout_0.9.1_darwin_arm64.tar.gz"
-      sha256 "5550411616777dbe30173db5824bb857541e29231c6241d15d9871f1b92417a4"
+      url "https://github.com/confighub/cub-scout/releases/download/v0.19.2/cub-scout_0.19.2_darwin_arm64.tar.gz"
+      sha256 "0d9b3cdadc5a8488d84ffefd948d99070732ca95b2370b9104e6fbd49ddc6ef1"
 
       def install
         bin.install "cub-scout"
@@ -29,15 +29,15 @@ class CubScout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/confighub/cub-scout/releases/download/v0.9.1/cub-scout_0.9.1_linux_amd64.tar.gz"
-      sha256 "9f2fdf65fb925cd5ff76e4e2056b91531696ee4a509fffc2135ea76ce5c6adf9"
+      url "https://github.com/confighub/cub-scout/releases/download/v0.19.2/cub-scout_0.19.2_linux_amd64.tar.gz"
+      sha256 "c60a3a91729fef4b60e3b65de3c2884dfa77e930ea65864c608adf141ebd0f2e"
       def install
         bin.install "cub-scout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/confighub/cub-scout/releases/download/v0.9.1/cub-scout_0.9.1_linux_arm64.tar.gz"
-      sha256 "50eef895fec542d5cb5f090e692aa044681211897707f9527785e8ae0eba3a4b"
+      url "https://github.com/confighub/cub-scout/releases/download/v0.19.2/cub-scout_0.19.2_linux_arm64.tar.gz"
+      sha256 "26d200cba7302f513d5915d79e1b111db4f00bb79bbea320e8856745d9de525f"
       def install
         bin.install "cub-scout"
       end
