@@ -11,7 +11,7 @@ class CubScout < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/confighub/cub-scout/releases/download/v0.20.1/cub-scout_0.20.1_darwin_amd64.tar.gz"
-      sha256 "da3a30502cc9b16547de929b0923e48c2a9c4489c01952c7b952a6bc4ae7f8a7"
+      sha256 "da18f53d53f86d0a3a751c3134ae6fb3e7f7c05e3c415d5e33464317b875a5c4"
 
       def install
         bin.install "cub-scout"
@@ -19,7 +19,7 @@ class CubScout < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/confighub/cub-scout/releases/download/v0.20.1/cub-scout_0.20.1_darwin_arm64.tar.gz"
-      sha256 "56fc3898d8c48288d3a56cd55e7853ed2bdcdab6b63b9ea3c049dcf16600f7e1"
+      sha256 "98986db9778bafb02c1db580566fd99a8aae992e6a373afab015cba6c00a22c3"
 
       def install
         bin.install "cub-scout"
@@ -30,14 +30,14 @@ class CubScout < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/confighub/cub-scout/releases/download/v0.20.1/cub-scout_0.20.1_linux_amd64.tar.gz"
-      sha256 "2035f5e6a89adc7e3fd91937ac7cb5d73697397f7e5a64544c94766cd3afb7f0"
+      sha256 "d61a2a6b53905130d29092a74fb52728a7e28025ddea0c836d2f7ce7401ae0f0"
       def install
         bin.install "cub-scout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/confighub/cub-scout/releases/download/v0.20.1/cub-scout_0.20.1_linux_arm64.tar.gz"
-      sha256 "3dff8e31bfc3c9b55c33636d83407bec1426511f3f08fabf5bfe72c9640e8076"
+      sha256 "aa4a7dec5f7bad1142d516a5967480a44d2a174de6783cbcf15343a6bfa3a5ea"
       def install
         bin.install "cub-scout"
       end
