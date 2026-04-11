@@ -4,8 +4,8 @@
 class CubScout < Formula
   desc "Explore and map GitOps in your clusters"
   homepage "https://confighub.com"
-  url "https://github.com/confighub/cub-scout/archive/refs/tags/v1.11.0.tar.gz"
-  sha256 "5cc700eceb5c91f2e19d3ef3b7577a553518e9a3e84b5582a45685c36c2bf95d"
+  url "https://github.com/confighub/cub-scout/archive/refs/tags/v1.12.0.tar.gz"
+  sha256 "4d697acc6daf7f6069ea0fc6841dda576adb6bc37a0384258c3e654c949dc404"
   license "MIT"
   head "https://github.com/confighub/cub-scout.git", branch: "main"
 
