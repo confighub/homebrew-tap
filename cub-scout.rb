@@ -13,11 +13,14 @@ class CubScout < Formula
 
   def install
     ldflags = "-s -w -X main.BuildTag=v#{version} -X main.BuildDate=homebrew"
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/cub-scout"
+    system "go", "build", *std_go_args(output: bin/"cub-scout", ldflags: ldflags), "./cmd/cub-scout"
+    system "go", "build", *std_go_args(output: bin/"kubectl-cub_scout", ldflags: ldflags), "./cmd/cub-scout"
   end
 
   test do
     output = shell_output("#{bin}/cub-scout version")
     assert_match "cub-scout", output
+    plugin_output = shell_output("#{bin}/kubectl-cub_scout version")
+    assert_match "cub-scout", plugin_output
   end
 end
