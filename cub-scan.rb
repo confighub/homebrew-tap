@@ -4,26 +4,26 @@
 class CubScan < Formula
   desc "Scan Kubernetes and GitOps configuration for risk"
   homepage "https://confighub.com"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.0/confighub-scan-darwin-arm64.tar.gz"
-      sha256 "ff6f8c5fd74b08245e6d135dd9cf67ef126264ef005b9c36741e503156661120"
+      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.1/confighub-scan-darwin-arm64.tar.gz"
+      sha256 "491866a7e210bed7cd87264d28f749d9fc5a5011b9835cefff2454214e560fd5"
     else
-      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.0/confighub-scan-darwin-amd64.tar.gz"
-      sha256 "444faff662c7b6751ea9537ce5fd3f0afc5a16e8797ad30f2ecc35e093f17692"
+      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.1/confighub-scan-darwin-amd64.tar.gz"
+      sha256 "2623ba0451862c089bdc1792b0daa1abebc2a8e52f77a53e17a46a17bbf28978"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.0/confighub-scan-linux-arm64.tar.gz"
-      sha256 "c5418bd5b41a043c3ad08a6825cc075c8a1bd7e41b48e5518f982e0f0e11bd4c"
+      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.1/confighub-scan-linux-arm64.tar.gz"
+      sha256 "acf1467dab2c937e42076c13972cfd32068cf7947ccc7c26aadb1cf533a84618"
     else
-      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.0/confighub-scan-linux-amd64.tar.gz"
-      sha256 "944caab7610ee306f50ca4142a5d5bede25ca02fb83bb73f8526654678a728db"
+      url "https://github.com/confighub/homebrew-tap/releases/download/cub-scan-v0.7.1/confighub-scan-linux-amd64.tar.gz"
+      sha256 "8108c128db993b17f9b92337022a9a6da9cc5faef8e506b8356b30230aa61735"
     end
   end
 
