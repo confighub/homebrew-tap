@@ -3,8 +3,8 @@
 class CubScout < Formula
   desc "GitOps explorer for agents: read-only evidence from your clusters"
   homepage "https://confighub.com"
-  url "https://github.com/confighub/cub-scout/archive/refs/tags/v2.13.1.tar.gz"
-  sha256 "d5da89ff5053bd16f9024b841e09263815aed4d172efdebf70a3a6c9cc50421b"
+  url "https://github.com/confighub/cub-scout/archive/refs/tags/v2.13.2.tar.gz"
+  sha256 "ecb796bb9560579f72bb03f4aa8264295bce26e457af3c59c31257e2f98f9e73"
   license "MIT"
 
   depends_on "go" => :build
